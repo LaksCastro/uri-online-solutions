@@ -11,4 +11,8 @@ const fib = n => {
   }
 };
 
-console.log(fib(Number(lines.shift()) - 1).join(" "));
+const index = Number(lines.shift()) - 1;
+
+const sequence = fib(index).join(" ");
+
+console.log(sequence);
