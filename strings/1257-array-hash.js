@@ -7,6 +7,7 @@ const cases = Number(lines.shift());
 
 for (let cas = 0; cas < cases; cas++) {
   const l = Number(lines.shift());
+  
   let sum = 0;
 
   for (let k = 0; k < l; k++) {
