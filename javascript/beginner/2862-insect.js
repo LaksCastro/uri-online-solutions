@@ -10,5 +10,6 @@ for (let caseIndex = 0; caseIndex < casesLength; caseIndex++) {
     console.log("Inseto!");
     continue;
   }
+  
   console.log("Mais de 8000!");
 }
