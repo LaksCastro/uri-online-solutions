@@ -42,5 +42,4 @@ even.sort("asc");
 odd.sort("desc");
 
 even.getStack().forEach((num) => console.log(num));
-
 odd.getStack().forEach((num) => console.log(num));
