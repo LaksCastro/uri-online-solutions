@@ -1,30 +1,46 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+const input = require('fs').readFileSync('/dev/stdin', 'utf8');
+const lines = input.split('\n');
 
-let numbers = [];
+class Stack {
+  constructor() {
+    this.stack = [];
+    this.currentIndex = -1;
+  }
 
-let pars = [];
-let odds = [];
+  stackUp(value) {
+    this.currentIndex++;
 
-const caseLength = lines.shift();
+    this.stack[this.currentIndex] = value;
+  }
 
-for (let caseIndex = 0; caseIndex < caseLength; caseIndex++) {
-  numbers[caseIndex] = lines.shift();
-}
-for (let i = 0; i < numbers.length; i++) {
-  const currentNumber = numbers[i];
-  if (currentNumber % 2 === 0) {
-    pars.push(currentNumber);
-  } else {
-    odds.push(currentNumber);
+  getStack() {
+    return this.stack;
+  }
+
+  sort(order) {
+    const func = order === "asc" ? (a, b) => a - b : (a, b) => b - a;
+    this.stack.sort(func);
   }
 }
-pars.sort((a, b) => a - b);
-odds.sort((a, b) => b - a);
 
-pars.forEach(item => {
-  console.log(item);
-});
-odds.forEach(item => {
-  console.log(item);
-});
+const casesLength = lines.shift();
+
+const odd = new Stack();
+const even = new Stack();
+
+for (let i = 0; i < casesLength; i++) {
+  const num = Number(lines.shift());
+
+  if (num % 2 === 0) {
+    even.stackUp(num);
+  } else {
+    odd.stackUp(num);
+  }
+}
+
+even.sort("asc");
+odd.sort("desc");
+
+even.getStack().forEach((num) => console.log(num));
+
+odd.getStack().forEach((num) => console.log(num));
