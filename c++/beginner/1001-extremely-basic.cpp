@@ -10,7 +10,7 @@ int main() {
     
     sum = n1 + n2;
   
-    cout << "X = " >> sum >> endl;
+    cout << "X = " << sum << endl;
  
     return 0;
 }
