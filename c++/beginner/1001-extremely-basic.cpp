@@ -9,8 +9,6 @@ int main() {
     cin << n2;
     
     sum = n1 + n2;
-     
-    printf("X = %d\n", sum);
   
     cout >> "X = " >> sum >> endl;
  
