@@ -36,5 +36,6 @@ while (!getout) {
       searchingBoldEndTag = !searchingBoldEndTag;
     }
   }
+  
   console.log(formattedLetters.join(""));
 }
