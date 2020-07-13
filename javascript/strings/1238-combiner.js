@@ -19,5 +19,6 @@ for (let caseI = 0; caseI < caseLength; caseI++) {
     const currentB = stringB[i] || false;
     if (currentB) finalString.push(currentB);
   }
+  
   console.log(finalString.join(""));
 }
