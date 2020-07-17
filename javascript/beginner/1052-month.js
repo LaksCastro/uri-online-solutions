@@ -1,23 +1,21 @@
 const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 const lines = input.split('\n');
 
-const month = Number(lines.shift());
+const month = lines.shift();
 
-let message = "";
+const months = {
+    "1": "January",
+    "2": "February",
+    "3": "March",
+    "4": "April",
+    "5": "May",
+    "6": "June",
+    "7": "July",
+    "8": "August",
+    "9": "September",
+    "10": "October",
+    "11": "November",
+    "12": "December"
+};
 
-switch(month){
-    case 1: message = "January"; break;
-    case 2: message = "February"; break;
-    case 3: message = "March"; break;
-    case 4: message = "April"; break;
-    case 5: message = "May"; break;
-    case 6: message = "June"; break;
-    case 7: message = "July"; break;
-    case 8: message = "August"; break;
-    case 9: message = "September"; break;
-    case 10: message = "October"; break;
-    case 11: message = "November"; break;
-    case 12: message = "December"; break;
-}
-
-console.log(message);
+console.log(months[month]);
