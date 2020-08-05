@@ -2,15 +2,12 @@
 
 using namespace std;
 
-int ascending = 1;
 int size = 3;
-
-bool compare(int a, int b) { return ascending == 1 ? (a < b) : (a > b); }
 
 void insertionSort(int arr[]) {
   for (int i = 0; i < size; i++) {
     for (int j = 0; j < size; j++) {
-      if (compare(arr[i], arr[j])) {
+      if (arr[i] < arr[j]) {
         int aux = arr[i];
 
         arr[i] = arr[j];
