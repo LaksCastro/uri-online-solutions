@@ -3,35 +3,19 @@
 
 using namespace std;
 
-int main() {
-  string s;
-
-  getline(cin, s);
-
-  string delimiter = " ";
-
-  size_t pos = 0;
-  string token;
-
-  int max;
-
-  while ((pos = s.find(delimiter)) != string::npos) {
-    token = s.substr(0, pos);
-
-    int current = stoi(token);
-
-    if (current > max) {
-      max = current;
+int main()
+{
+    int s[3], max;
+    
+    cin >> s[0] >> s[1] >> s[2];
+    
+    for(int i = 0; i < 3; i++) {
+        if(s[i] > max) {
+            max = s[i];
+        }
     }
-
-    s.erase(0, pos + delimiter.length());
-  }
-
-  if (stoi(s) > max) {
-    max = stoi(s);
-  }
-
-  cout << max << " eh o maior" << endl;
-
-  return 0;
+    
+    cout << max << " eh o maior" << endl;
+    
+    return 0;
 }
