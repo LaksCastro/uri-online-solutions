@@ -1,1 +1,3 @@
-select distinct city from providers order by city asc;
+SELECT DISTINCT city
+FROM providers
+ORDER BY city ASC;
