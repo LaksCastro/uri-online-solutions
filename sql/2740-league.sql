@@ -1,3 +1,7 @@
-(select concat('Podium: ', team) from league where position <= 3)
-union all
-(select concat('Demoted: ', team) from league where position >= 14);
+  (SELECT concat('Podium: ', team)
+   FROM league
+   WHERE POSITION <= 3)
+UNION ALL
+  (SELECT concat('Demoted: ', team)
+   FROM league
+   WHERE POSITION >= 14);
