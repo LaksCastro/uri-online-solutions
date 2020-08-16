@@ -1,3 +1,5 @@
-select categories.name, sum(products.amount) from categories
-join products on categories.id = products.id_categories
-group by categories.name;
+SELECT categories.name,
+       sum(products.amount)
+FROM categories
+JOIN products ON categories.id = products.id_categories
+GROUP BY categories.name;
