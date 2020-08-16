@@ -1,16 +1,16 @@
-(select name, customers_number
-from lawyers
-order by customers_number desc
-limit 1)
 
-union all
-
-(select name, customers_number
-from lawyers
-order by customers_number ASC
-limit 1)
-
-union all
-
-(select 'Average', round(avg(customers_number), 0)
-from lawyers);
+  (SELECT name,
+          customers_number
+   FROM lawyers
+   ORDER BY customers_number DESC
+   LIMIT 1)
+UNION ALL
+  (SELECT name,
+          customers_number
+   FROM lawyers
+   ORDER BY customers_number ASC
+   LIMIT 1)
+UNION ALL
+  (SELECT 'Average',
+          round(avg(customers_number), 0)
+   FROM lawyers);
