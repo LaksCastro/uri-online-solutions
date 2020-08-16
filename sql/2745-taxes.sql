@@ -1,1 +1,4 @@
-select name, round((salary * 0.10), 2) as tax from people where salary > 3000;
+SELECT name,
+       round((salary * 0.10), 2) AS tax
+FROM people
+WHERE salary > 3000;
