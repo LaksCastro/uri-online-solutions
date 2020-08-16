@@ -1,3 +1,5 @@
-select products.name, providers.name from products 
-join providers on providers.id = products.id_providers 
-where products.id_categories = 6;
+SELECT id,
+       name
+FROM products
+WHERE (price < 10
+       OR price > 100);
