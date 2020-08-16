@@ -1,5 +1,7 @@
-select id, name from customers
-where not exists
-(select id_customers
-from locations
-where customers.id = locations.id_customers);
+SELECT id,
+       name
+FROM customers
+WHERE NOT EXISTS
+    (SELECT id_customers
+     FROM locations
+     WHERE customers.id = locations.id_customers);
