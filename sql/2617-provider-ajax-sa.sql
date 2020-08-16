@@ -1,2 +1,5 @@
-select products.name, providers.name from products 
-join providers on providers.id = products.id_providers and providers.name = 'Ajax SA';
+SELECT products.name,
+       providers.name
+FROM products
+JOIN providers ON providers.id = products.id_providers
+AND providers.name = 'Ajax SA';
