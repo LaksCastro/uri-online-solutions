@@ -1,3 +1,5 @@
-select customers.name, orders.id from orders
-join customers on customers.id = orders.id_customers
-where orders.orders_date between '2016-01-01' and '2016-06-30';
+SELECT customers.name,
+       orders.id
+FROM orders
+JOIN customers ON customers.id = orders.id_customers
+WHERE orders.orders_date BETWEEN '2016-01-01' AND '2016-06-30';
