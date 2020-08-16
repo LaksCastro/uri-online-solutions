@@ -1,3 +1,3 @@
-select customers.name
-from customers 
-join legal_person on customers.id = legal_person.id_customers;
+SELECT customers.name
+FROM customers
+JOIN legal_person ON customers.id = legal_person.id_customers;
