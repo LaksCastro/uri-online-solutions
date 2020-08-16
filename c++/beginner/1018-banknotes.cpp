@@ -12,11 +12,6 @@ int main() {
   cout << total << endl;
 
   for (int i = 0; i < 7; i++) {
-    if (total == 0) {
-      cout << "0 nota(s) de R$ " << banknotes[i] << ",00" << endl;
-      continue;
-    }
-
     long amount = total / banknotes[i];
 
     total -= amount * banknotes[i];
