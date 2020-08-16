@@ -1,3 +1,5 @@
-select products.id, products.name from products 
-join categories on categories.id = products.id_categories 
-where categories.name like 'super%';
+SELECT products.id,
+       products.name
+FROM products
+JOIN categories ON categories.id = products.id_categories
+WHERE categories.name LIKE 'super%';
