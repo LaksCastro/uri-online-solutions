@@ -1,3 +1,5 @@
-select customers.name, rentals.rentals_date	from customers
-join rentals on customers.id = rentals.id_customers 
-where rentals.rentals_date between '2016-09-01' and '2016-09-30';
+SELECT customers.name,
+       rentals.rentals_date
+FROM customers
+JOIN rentals ON customers.id = rentals.id_customers
+WHERE rentals.rentals_date BETWEEN '2016-09-01' AND '2016-09-30';
