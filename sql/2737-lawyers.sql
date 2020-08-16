@@ -1,4 +1,3 @@
-
   (SELECT name,
           customers_number
    FROM lawyers
