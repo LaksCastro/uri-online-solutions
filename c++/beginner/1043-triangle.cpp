@@ -19,10 +19,10 @@ int main() {
       c > abs(a - b) &&
       c < a + b;
     
-    if(possible){
+    if(possible) {
       double p = a + b + c;
       cout << "Perimetro = " << p << endl;
-    }else{
+    } else {
       double area = (a + b) * c / 2;
       cout << "Area = " << area << endl;
     }
