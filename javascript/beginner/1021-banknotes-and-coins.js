@@ -20,6 +20,7 @@ function calculaTroco(valor, valores, troco, continueDecimal) {
       valor = resto;
     }
   }
+  
   return valor;
 }
 
