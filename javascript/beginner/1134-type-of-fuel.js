@@ -21,6 +21,7 @@ while (!getout) {
       break;
   }
 }
+
 console.log("MUITO OBRIGADO");
 console.log("Alcool: " + alcohol);
 console.log("Gasolina: " + gasoline);
