@@ -24,4 +24,5 @@ switch(id){
 }
 
 const total = price * qtd; 
+
 console.log(`Total: R$ ${total.toFixed(2)}`); 
