@@ -4,7 +4,9 @@ const lines = input.split('\n');
 for (let i = 0; i < 100; i++) {
   const current = Number(lines[i]);
 
-  if (current > 10) continue;
+  if (current > 10) {
+    continue;
+  }
 
   console.log(`A[${i}] = ${current.toFixed(1)}`);
 }
