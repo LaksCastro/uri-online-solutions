@@ -24,12 +24,16 @@ while (!getout) {
   numB = num;
 
   const average = (numA + numB) / 2;
+  
   let validResponse = false;
+  
   numA = null;
   numB = null;
+  
   console.log("media = " + average.toFixed(2));
 
   let response = null;
+  
   do {
     console.log("novo calculo (1-sim 2-nao)");
 
