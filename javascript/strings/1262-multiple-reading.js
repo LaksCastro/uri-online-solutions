@@ -4,7 +4,9 @@ const lines = input.split('\n');
 while (true) {
   const str = lines.shift();
 
-  if (!str) break;
+  if (!str) {
+    break;
+  }
 
   const process = lines.shift();
 
