@@ -8,8 +8,11 @@ let [initialTabs, actionsLength] = str.split(" ").map(item => Number(item));
 for (let act = 0; act < actionsLength; act++) {
   const currentAction = lines.shift();
 
-  if (currentAction === "fechou") initialTabs++;
-  else initialTabs--;
+  if (currentAction === "fechou") {
+    initialTabs++;
+  } else {
+    initialTabs--;
+  }
 }
 
 console.log(initialTabs);
