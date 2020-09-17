@@ -13,15 +13,23 @@ while (true) {
     .split(" ")
     .map(item => Number(item));
 
-  if (interG > gremioG) inter++;
-  else if (interG < gremioG) gremio++;
-  else tie++;
-
+  if (interG > gremioG) {
+    inter++;
+  } else if (interG < gremioG) {
+    gremio++;
+  } else {
+    tie++;
+  }
+ 
   grenaisCount++;
 
   console.log("Novo grenal (1-sim 2-nao)");
+  
   const response = lines.shift();
-  if (response === "2") break;
+  
+  if (response === "2") {
+    break;
+  }
 }
 
 console.log(`${grenaisCount} grenais`);
