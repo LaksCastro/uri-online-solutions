@@ -8,7 +8,9 @@ const isEven = n => n % 2 === 0;
 for (let caseIndex = 0; caseIndex < cases; caseIndex++) {
   let [n, sequence] = lines.shift().split(" ").map(item => Number(item));
 
-  if (isEven(n)) n++;
+  if (isEven(n)) {
+    n++;
+  }
 
   let ac = n;
 
