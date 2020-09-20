@@ -6,6 +6,7 @@ let diesel = 0;
 
 while (!getout) {
   const code = Number(lines.shift());
+  
   switch (code) {
     case 1:
       alcohol++;
