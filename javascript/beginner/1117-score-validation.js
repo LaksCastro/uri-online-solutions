@@ -5,7 +5,7 @@ const numbers = [];
 
 let validNumbers = numbers.length === 2;
 
-while(!validNumbers){
+while(!validNumbers) {
     const num = Number(lines.shift());
     
     if(num >= 0 && num <= 10) {
