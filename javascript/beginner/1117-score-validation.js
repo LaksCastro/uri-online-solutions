@@ -5,10 +5,10 @@ const numbers = [];
 
 let validNumbers = numbers.length === 2;
 
-while(!validNumbers) {
+while (!validNumbers) {
     const num = Number(lines.shift());
     
-    if(num >= 0 && num <= 10) {
+    if (num >= 0 && num <= 10) {
       numbers.push(num);
     } else {
       console.log("nota invalida");
