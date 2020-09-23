@@ -9,7 +9,9 @@ for (let caseIndex = 0; caseIndex < casesLength; caseIndex++) {
   let sum = 0;
 
   for (let a = 1; a < num; a++) {
-    if (num % a === 0) sum += a;
+    if (num % a === 0) {
+      sum += a;
+    }
   }
 
   const message = num + (sum === num ? " eh perfeito" : " nao eh perfeito");
