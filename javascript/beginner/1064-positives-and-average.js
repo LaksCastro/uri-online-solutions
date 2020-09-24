@@ -18,6 +18,3 @@ const average = sum / positives.length;
 console.log(positives.length + " valores positivos");
 
 console.log(average.toFixed(1));
-
-	
-	
