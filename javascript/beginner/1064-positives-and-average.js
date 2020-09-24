@@ -1,7 +1,8 @@
 const lines = input.split('\n');
 const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 
-let positives = [];
+const positives = [];
+
 let sum = 0;
 
 for(let i = 0; i < 6; i++){
@@ -16,5 +17,4 @@ for(let i = 0; i < 6; i++){
 const average = sum / positives.length;
 
 console.log(positives.length + " valores positivos");
-
 console.log(average.toFixed(1));
