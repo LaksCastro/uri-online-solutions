@@ -21,15 +21,20 @@ const animals = {
   },
   getPercentOf: function(animal) {
     const targetCount = this[animal].count;
+    
     const total = this.getTotal();
+    
     const percent = (targetCount * 100) / total;
+    
     return percent.toFixed(2);
   }
 };
 
 for (let caseIndex = 0; caseIndex < cases; caseIndex++) {
   const experiment = lines.shift();
+  
   const [quantity, animal] = experiment.split(" ");
+  
   animals[animal].count += Number(quantity);
 }
 
