@@ -11,7 +11,9 @@ for (let x = 0; x < 12; x++) {
   for (let y = 0; y < 12; y++) {
     const num = Number(lines.shift());
 
-    if (y === column) sum += num;
+    if (y === column) {
+      sum += num;
+    }
   }
 }
 
