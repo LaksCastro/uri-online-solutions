@@ -6,7 +6,7 @@ let getout = false;
 while (!getout) {
   const [a, b] = lines.shift().split(" ").map(item => Number(item));
   
-  if(a <= 0 || b <= 0){
+  if (a <= 0 || b <= 0) {
     getout = true;
     break;
   }
