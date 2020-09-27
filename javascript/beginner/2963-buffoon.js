@@ -8,7 +8,10 @@ let joaoEleito = true;
 
 Array.from({ length: numeroCand }).forEach((_, i) => {
   const candidatoVotos = Number(lines.shift());
-  if (candidatoVotos > joaoVotos) joaoEleito = false;
+  
+  if (candidatoVotos > joaoVotos) {
+    joaoEleito = false;
+  }
 });
 
 console.log(joaoEleito ? "S" : "N");
