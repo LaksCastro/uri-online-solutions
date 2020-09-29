@@ -20,6 +20,7 @@ for (let caseI = 0; caseI < cases; caseI++) {
         sum += numB;
       }
     }
+    
     console.log(sum);
   }
 }
