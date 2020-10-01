@@ -11,6 +11,7 @@ while (caseIndex < casesLength) {
     console.log("nao encaixa");
   } else {
     const substring = a.substring(a.length - b.length);
+    
     if (substring === b) {
       console.log("encaixa");
     } else {
