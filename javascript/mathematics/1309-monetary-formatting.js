@@ -20,6 +20,7 @@ while (true) {
     if (i && i % 3 === 0) {
       newValue.push(",");
     }
+    
     newValue.push(char);
   }
 
