@@ -13,6 +13,7 @@ let total = 225;
 
 for (let i = 0; i < 5; i++) {
   const qtd = lines.shift();
+  
   total += guests[i] * qtd;
 }
 
