@@ -4,7 +4,9 @@ const lines = input.split('\n');
 while (true) {
   let value = lines.shift();
 
-  if (!value) break;
+  if (!value) {
+    break;
+  }
 
   value = value.split("");
 
