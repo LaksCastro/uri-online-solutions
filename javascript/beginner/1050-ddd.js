@@ -14,7 +14,7 @@ switch(ddd){
   case 19: message = "Campinas"; break;
   case 27: message = "Vitoria"; break;
   case 31: message = "Belo Horizonte"; break;
-  default: message = "DDD nao cadastrado"
+  default: message = "DDD nao cadastrado"; break;
 }
 
 console.log(message);
