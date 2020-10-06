@@ -15,6 +15,7 @@ while (true) {
 
   for (let x = 0; x < n; x++) {
     let output = "";
+    
     for (let y = 0; y < n; y++) {
       let current = "";
 
