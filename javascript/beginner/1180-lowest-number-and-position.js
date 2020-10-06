@@ -9,6 +9,7 @@ let lowestIndex = 0;
 
 for (let index = 1; index < n; index++) {
   const currentNumber = arrayN[index];
+  
   if (currentNumber < lowest) {
     lowest = currentNumber;
     lowestIndex = index;
