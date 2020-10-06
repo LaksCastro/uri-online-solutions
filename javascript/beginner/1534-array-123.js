@@ -4,7 +4,9 @@ const lines = input.split('\n');
 while (true) {
   const str = lines.shift();
 
-  if (!str) break;
+  if (!str) {
+    break;
+  }
 
   const n = Number(str);
 
@@ -24,6 +26,7 @@ while (true) {
 
       output += current;
     }
+    
     console.log(output);
 
     oneI++;
