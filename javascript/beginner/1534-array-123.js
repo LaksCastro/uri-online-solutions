@@ -19,11 +19,17 @@ while (true) {
     for (let y = 0; y < n; y++) {
       let current = "";
 
-      if (y === oneI) current = "1";
+      if (y === oneI) {
+        current = "1";
+      }
 
-      if (y === twoI) current = "2";
+      if (y === twoI) {
+        current = "2";
+      }
 
-      if (current === "") current = "3";
+      if (current === "") {
+        current = "3";
+      }
 
       output += current;
     }
