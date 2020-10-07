@@ -12,8 +12,11 @@ for (let a = 1; a <= max; a += interval) {
   let currentString = "";
 
   for (let a = initial; a < final; a++) {
-    if (a === final - 1) currentString += a;
-    else currentString += a + " ";
+    if (a === final - 1) {
+      currentString += a;
+    } else {
+      currentString += a + " ";
+    }
   }
   console.log(currentString);
 }
