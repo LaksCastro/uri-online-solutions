@@ -18,5 +18,6 @@ for (let a = 1; a <= max; a += interval) {
       currentString += a + " ";
     }
   }
+  
   console.log(currentString);
 }
