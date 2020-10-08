@@ -8,6 +8,7 @@ while (!getout) {
 
   if (!a) {
     getout = true;
+    
     break;
   }
 
