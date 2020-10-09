@@ -25,7 +25,9 @@ while (true) {
     total += foods[name] * qtd;
   }
 
-  if (total < 110) console.log("Mais " + (110 - total) + " mg");
+  if (total < 110) {
+    console.log("Mais " + (110 - total) + " mg");
+  }
   else if (total > 130) console.log("Menos " + (total - 130) + " mg");
   else console.log(total + " mg");
 }
