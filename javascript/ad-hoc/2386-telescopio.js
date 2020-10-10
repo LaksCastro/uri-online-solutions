@@ -12,7 +12,9 @@ for (let cas = 0; cas < cases; cas++) {
 
   const result = photons * telescope;
 
-  if (result >= 40000000) total++;
+  if (result >= 40000000) {
+    total++;
+  }
 }
 
 console.log(total);
