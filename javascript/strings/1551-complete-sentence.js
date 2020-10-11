@@ -18,7 +18,10 @@ for (let i = 0; i < lengthCases; i++) {
     const letterIndex = letter.charCodeAt();
     
     const [exists] = allLetters.filter(item => item === letterIndex);
-    if (!exists) allLetters.push(letterIndex);
+    
+    if (!exists) {
+      allLetters.push(letterIndex);
+    }
   }
 
   const qtdLetters = allLetters.length;
