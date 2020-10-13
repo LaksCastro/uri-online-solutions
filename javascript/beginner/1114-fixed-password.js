@@ -3,7 +3,7 @@ const lines = input.split('\n');
 
 let valid = false;
 
-const validPass = "2002"
+const validPass = "2002";
 
 while (!valid) {
   const pass = lines.shift();
