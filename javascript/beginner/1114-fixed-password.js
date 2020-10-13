@@ -5,13 +5,16 @@ let valid = false;
 
 const validPass = "2002"
 
-while(!valid){
+while (!valid) {
   const pass = lines.shift();
-  if(pass === validPass){
+  
+  if (pass === validPass) {
     valid = true;
+    
     console.log("Acesso Permitido");
+    
     break;
-  }else{
+  } else {
     console.log("Senha Invalida");
   }
 }
