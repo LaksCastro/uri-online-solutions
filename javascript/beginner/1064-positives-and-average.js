@@ -5,10 +5,10 @@ const positives = [];
 
 let sum = 0;
 
-for(let i = 0; i < 6; i++){
+for (let i = 0; i < 6; i++) {
   const num = Number(lines.shift());
 	
-  if(num >= 0){
+  if (num >= 0) {
     positives.push(num);
     sum += num;
   }
