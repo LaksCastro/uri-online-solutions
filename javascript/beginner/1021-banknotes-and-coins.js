@@ -13,6 +13,7 @@ function calculaTroco(valor, valores, troco, continueDecimal) {
   for (let i = 0; i < valores.length; i++) {
     const resto = Number((valor % valores[i]).toFixed(2));
     const qtdNotas = Math.trunc(valor / valores[i]);
+    
     if (resto === valor) {
       troco.push(0);
     } else {
@@ -29,16 +30,19 @@ valor = calculaTroco(valor, notas, trocoNotas);
 if (valor !== 0) {
   valor = calculaTroco(valor, moedas, trocoMoedas);
 }
+
 if (!trocoMoedas.length) {
   trocoMoedas = moedas.map(() => 0);
 }
 
 console.log("NOTAS:");
+
 trocoNotas.forEach((item, i) => {
   console.log(`${item} nota(s) de R$ ${notas[i].toFixed(2)}`);
 });
 
 console.log("MOEDAS:");
+
 trocoMoedas.forEach((item, i) => {
   console.log(`${item} moeda(s) de R$ ${moedas[i].toFixed(2)}`);
 });
