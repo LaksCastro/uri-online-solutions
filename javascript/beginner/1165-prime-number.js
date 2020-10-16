@@ -3,7 +3,7 @@ const lines = input.split('\n');
 
 const cases = Number(lines.shift());
 
-for(let x = 0; x < cases; x++){
+for (let x = 0; x < cases; x++) {
     const num = Number(lines.shift());
 
     let divisors = 0;
