@@ -23,16 +23,21 @@ if (mediaPonderada >= 7) {
   console.log("Aluno reprovado.");
 } else {
   console.log("Aluno em exame.");
+  
   let notaExame = lines.shift();
+  
   notaExame = Number(notaExame);
+  
   const mediaFinal = (mediaPonderada + notaExame) / 2;
 
   console.log(`Nota do exame: ${arredondar(notaExame, 1)}`);
+  
   if (mediaFinal >= 5) {
     console.log("Aluno aprovado.");
   } else {
     console.log("Aluno reprovado.");
   }
+  
   console.log(`Media final: ${arredondar(mediaFinal, 1)}`);
 }
 
