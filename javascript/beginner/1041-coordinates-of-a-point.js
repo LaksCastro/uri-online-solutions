@@ -3,14 +3,14 @@ const lines = input.split('\n');
 
 const [x, y] = lines.shift().split(" ").map(item => Number(item));
 
-if(!x && !y){
+if (!x && !y) {
 	console.log("Origem");
-}else{
-	if(!x){
+} else {
+	if(!x) {
 		console.log("Eixo Y");
-	}else if(!y){
+	} else if(!y) {
 		console.log("Eixo X");
-	}else{
+	} else {
 		if(x > 0 && y > 0){
 			console.log("Q1");
 		}else if(x > 0 && y < 0){
