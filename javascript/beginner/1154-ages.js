@@ -8,7 +8,10 @@ let agesSum = 0;
 
 while(!getout){
   const age = Number(lines.shift());  
-  if(age < 0) break;
+  
+  if(age < 0) {
+    break;
+  }
   
   agesSum += age;
   agesLength++;
