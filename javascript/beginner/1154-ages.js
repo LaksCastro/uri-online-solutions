@@ -6,10 +6,10 @@ let getout = false;
 let agesLength = 0;
 let agesSum = 0;
 
-while(!getout){
+while (!getout) {
   const age = Number(lines.shift());  
   
-  if(age < 0) {
+  if (age < 0) {
     break;
   }
   
