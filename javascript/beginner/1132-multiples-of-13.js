@@ -8,8 +8,8 @@ let [a, b] = x > y ? [y, x] : [x, y];
 
 let sum = 0;
 
-while(a < b){
-    if(!(a % 13 === 0)) {
+while (a < b) {
+    if (!(a % 13 === 0)) {
       sum += a;
     }
     
