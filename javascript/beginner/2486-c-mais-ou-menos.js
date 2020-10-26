@@ -14,7 +14,9 @@ const foods = {
 while (true) {
   const t = Number(lines.shift());
 
-  if (!t) break;
+  if (!t) {
+    break;
+  }
 
   let total = 0;
 
