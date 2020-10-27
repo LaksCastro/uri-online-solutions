@@ -14,7 +14,9 @@ for (let caseInd = 0; caseInd < cases; caseInd++) {
 
     let newCode = code - key;
 
-    if (newCode < 65) newCode = 91 - (65 - newCode);
+    if (newCode < 65) {
+      newCode = 91 - (65 - newCode);
+    }
 
     newStr += String.fromCharCode(newCode);
   }
