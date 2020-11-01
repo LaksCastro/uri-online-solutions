@@ -4,7 +4,9 @@ const lines = input.split("\n");
 while (true) {
   let str = lines.shift();
 
-  if (!str) break;
+  if (!str) {
+    break;
+  }
 
   str = str.replace(/  */g, " ");
   str = str.split(" ");
