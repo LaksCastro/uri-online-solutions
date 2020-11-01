@@ -21,7 +21,9 @@ while (true) {
       word.search(/[0-9]/g) !== -1 &&
       (dotIndex !== -1 ? dotIndex !== word.length - 1 : true);
 
-    if (isInvalid || !word) continue;
+    if (isInvalid || !word) {
+      continue;
+    }
 
     wordsLength++;
     wordsLettersCount += word.replace(/\./g, "").length;
