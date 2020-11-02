@@ -1,12 +1,10 @@
 const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 const lines = input.split('\n');
 
-let getout = false;
-
-while (!getout) {
+while (true) {
   const text = lines.shift().toLowerCase();
+  
   if (!text) {
-    getout = true;
     break;
   }
   
