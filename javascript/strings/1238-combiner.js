@@ -14,10 +14,14 @@ for (let caseI = 0; caseI < caseLength; caseI++) {
 
   for (let i = 0; i < lastIndex; i++) {
     const currentA = stringA[i] || false;
-    if (currentA) finalString.push(currentA);
+    if (currentA) {
+      finalString.push(currentA);
+    }
     
     const currentB = stringB[i] || false;
-    if (currentB) finalString.push(currentB);
+    if (currentB) {
+      finalString.push(currentB);
+    }
   }
   
   console.log(finalString.join(""));
