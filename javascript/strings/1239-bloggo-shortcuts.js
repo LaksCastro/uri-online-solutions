@@ -1,13 +1,10 @@
 const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 const lines = input.split('\n');
 
-let getout = false;
-
-while (!getout) {
+while (true) {
   let string = lines.shift();
 
   if (!string) {
-    getout = true;
     break;
   }
 
