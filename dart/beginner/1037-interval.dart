@@ -21,6 +21,4 @@ String _getLine() {
   return line.trim();
 }
 
-double _getDoubleLine() {
-  return double.parse(_getLine());
-}
+double _getDoubleLine() => double.parse(_getLine());
