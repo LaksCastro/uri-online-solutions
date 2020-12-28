@@ -5,7 +5,7 @@ import 'dart:math' as math;
 void main() {
   final inputs = _getIntListLine();
 
-  print('${_calcMax(inputs)}');
+  print('${_calcMax(inputs)} eh o maior');
 }
 
 int _calcMax(List<int> inputs, [int max, int i = 0]) {
