@@ -26,10 +26,8 @@ void main() {
 
 bool _isEven(int n) => n % 2 == 0;
 
-bool _isEvenList(List<int> list) => _isEven(list.first);
-
 void _displayList(List<int> list) {
-  final message = _isEvenList(list) ? 'par' : 'impar';
+  final message = _isEven(list.first) ? 'par' : 'impar';
 
   for (var i = 0; i < list.length; i++) {
     final item = list[i];
