@@ -14,11 +14,8 @@ void main() {
   }
 }
 
-String _getLine() {
-  final line = stdin.readLineSync(encoding: Encoding.getByName('utf-8'));
-
-  return line.trim();
-}
+String _getLine() =>
+    stdin.readLineSync(encoding: Encoding.getByName('utf-8')).trim();
 
 List<int> _getIntListLine() {
   try {
