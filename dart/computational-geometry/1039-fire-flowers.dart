@@ -44,8 +44,9 @@ double _getDistance(x1, y1, x2, y2) {
   return math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2));
 }
 
-String _getLine() =>
-    stdin.readLineSync(encoding: Encoding.getByName('utf-8')).trim();
+String _getLine() {
+  return stdin.readLineSync(encoding: Encoding.getByName('utf-8')).trim();
+}
 
 List<int> _getIntListLine() {
   try {
