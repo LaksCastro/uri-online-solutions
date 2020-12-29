@@ -1,11 +1,8 @@
 void main() {
-  var divisor = 1;
-  var dividendo = 1;
-
   var s = 0.0;
 
-  for (; divisor <= 39; divisor += 2, dividendo += dividendo) {
-    s += divisor / dividendo;
+  for (var d1 = 1, d2 = 1; d1 <= 39; d1 += 2, d2 += d2) {
+    s += d1 / d2;
   }
 
   print(s.toStringAsFixed(2));
