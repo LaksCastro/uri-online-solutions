@@ -3,8 +3,8 @@ import 'dart:io';
 
 void main() {
   List<int> inputs;
-  
-  while ((inputs = _getIntListLine()) != null) {
+
+  while ((inputs = _getIntListLine()).isNotEmpty) {
     final m = inputs[0];
     final n = inputs[1];
 
@@ -15,13 +15,15 @@ void main() {
 }
 
 String _getLine() =>
-    stdin.readLineSync(encoding: Encoding.getByName('utf-8')).trim();
+    stdin.readLineSync(encoding: Encoding.getByName('utf-8'))?.trim() ?? '';
 
 List<int> _getIntListLine() {
-  try {
-    return _getLine().split(' ').map((o) => int.parse(o)).toList();
-  } catch (e) {
-    return null;
+  final line = _getLine();
+
+  if (line.isEmpty) {
+    return const <int>[];
+  } else {
+    return line.split(' ').map(int.parse).toList();
   }
 }
 
