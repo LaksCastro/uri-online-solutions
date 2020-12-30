@@ -10,7 +10,6 @@ void main() {
 
 /// * Recusive solution
 /// ```dart
-///
 /// void main() {
 ///   print(_s().toStringAsFixed(2));
 /// }
