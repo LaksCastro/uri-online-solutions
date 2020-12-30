@@ -16,5 +16,4 @@ int _sum(int a, int n, [int ac = 0, int i = 0]) =>
 String _getLine() =>
     stdin.readLineSync(encoding: Encoding.getByName('utf-8')).trim();
 
-List<int> _getIntListLine() =>
-    _getLine().split(' ').map((o) => int.parse(o)).toList();
+List<int> _getIntListLine() => _getLine().split(' ').map(int.parse).toList();
