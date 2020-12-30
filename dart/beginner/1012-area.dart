@@ -31,4 +31,4 @@ String _getLine() {
 }
 
 List<double> _getDoubleListLine() =>
-    _getLine().split(' ').map((o) => double.parse(o)).toList();
+    _getLine().split(' ').map(double.parse).toList();
