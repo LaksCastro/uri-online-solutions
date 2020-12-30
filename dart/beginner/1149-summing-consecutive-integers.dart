@@ -7,14 +7,11 @@ void main() {
   final a = inputs[0];
   final n = inputs[1];
 
-  var s = 0;
-
-  for (var i = 0; i < n; i++) {
-    s += a + i;
-  }
-
-  print(s);
+  print(_sum(a, n));
 }
+
+int _sum(int a, int n, [int ac = 0, int i = 0]) =>
+    i < n ? _sum(a, n, ac + a + i, ++i) : ac;
 
 String _getLine() =>
     stdin.readLineSync(encoding: Encoding.getByName('utf-8')).trim();
