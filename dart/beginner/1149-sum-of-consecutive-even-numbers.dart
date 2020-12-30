@@ -2,19 +2,19 @@ import 'dart:convert';
 import 'dart:io';
 
 void main() {
-  final inputs = _getIntListLine()..removeWhere((input) => input <= 0);
+  int input;
 
-  final a = inputs[0];
-  final n = inputs[1];
-
-  print(_sum(a, n));
+  while ((input = _getIntLine()) != 0) {
+    print(_sum(input));
+  }
 }
 
-int _sum(int a, int n, [int ac = 0, int i = 0]) =>
-    i < n ? _sum(a, n, ac + a + i, ++i) : ac;
+int _sum(int n, [int i = 0, int ac = 0]) =>
+    i == 5 ? ac : _sum(n + 2, ++i, (_isEven(n) ? n : n + 1) + ac);
+
+bool _isEven(int n) => n % 2 == 0;
 
 String _getLine() =>
     stdin.readLineSync(encoding: Encoding.getByName('utf-8')).trim();
 
-List<int> _getIntListLine() =>
-    _getLine().split(' ').map((o) => int.parse(o)).toList();
+int _getIntLine() => int.parse(_getLine());
