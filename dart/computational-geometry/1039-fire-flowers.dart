@@ -2,11 +2,19 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math' as math;
 
+/// Create a 2D circle representation
 class Circle {
+  /// Radius of the circle
   final int r;
+
+  /// x position of center circle
   final int x;
+
+  /// y position of center circle
   final int y;
 
+  /// x and y relative to the center of circle
+  /// r is the radius size of the circle
   const Circle({
     this.r,
     this.x,
@@ -17,7 +25,7 @@ class Circle {
 void main() {
   List<int> inputs;
 
-  while ((inputs = _getIntListLine()) != null) {
+  while ((inputs = _getIntListLine()).isNotEmpty) {
     final r1 = inputs[0];
     final x1 = inputs[1];
     final y1 = inputs[2];
@@ -44,14 +52,15 @@ double _getDistance(x1, y1, x2, y2) {
   return math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2));
 }
 
-String _getLine() {
-  return stdin.readLineSync(encoding: Encoding.getByName('utf-8')).trim();
-}
+String _getLine() =>
+    stdin.readLineSync(encoding: Encoding.getByName('utf-8'))?.trim() ?? '';
 
 List<int> _getIntListLine() {
-  try {
-    return _getLine().split(' ').map((o) => int.parse(o)).toList();
-  } catch (e) {
-    return null;
+  final line = _getLine();
+
+  if (line?.isEmpty ?? true) {
+    return const <int>[];
+  } else {
+    return line.split(' ').map(int.tryParse).toList();
   }
 }
