@@ -58,7 +58,7 @@ String _getLine() =>
 List<int> _getIntListLine() {
   final line = _getLine();
 
-  if (line?.isEmpty ?? true) {
+  if (line.isEmpty) {
     return const <int>[];
   } else {
     return line.split(' ').map(int.tryParse).toList();
