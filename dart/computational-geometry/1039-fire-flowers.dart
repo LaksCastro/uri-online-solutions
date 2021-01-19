@@ -2,19 +2,11 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math' as math;
 
-/// Create a 2D circle representation
 class Circle {
-  /// Radius of the circle
   final int r;
-
-  /// x position of center circle
   final int x;
-
-  /// y position of center circle
   final int y;
 
-  /// x and y relative to the center of circle
-  /// r is the radius size of the circle
   const Circle({
     this.r,
     this.x,
