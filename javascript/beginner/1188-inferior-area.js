@@ -1,7 +1,7 @@
-const input = require('fs').readFileSync('/dev/stdin', 'utf8');
-const lines = input.split('\n');
+const input = require("fs").readFileSync("/dev/stdin", "utf8");
+const lines = input.split("\n");
 
-const isSum = lines.shift() === 'S';
+const isSum = lines.shift() === "S";
 
 const xL = 12,
   yL = 12;
@@ -20,4 +20,4 @@ for (var y = 0; y < yL; y++) {
   }
 }
 
-console.log((sum / (isSum ? 1 : av)).toFixed('1'));
+console.log((sum / (isSum ? 1 : av)).toFixed("1"));
