@@ -1,29 +1,23 @@
 const input = require('fs').readFileSync('/dev/stdin', 'utf8');
 const lines = input.split('\n');
 
-const op = lines.shift() === "S" ? value => value : value => value / 144;
+const isSum = lines.shift() === 'S';
 
-const [x, y] = [12, 12];
+const xL = 12,
+  yL = 12;
 
-const values = [];
+let sum = 0.0,
+  av = 0.0;
 
-let initOn = 5;
-let endOn = 6;
+for (var y = 0; y < yL; y++) {
+  for (var x = 0; x < xL; x++) {
+    const i = Number(lines.shift());
 
-let sum = 0;
-
-for (let a = 0; a < x; a++) {
-  for (let b = 0; b < y; b++) {
-    const value = Number(lines.shift());
-
-    if (a >= 7 && b >= initOn && b <= endOn) {
-      sum += value;
+    if (x > yL - y - 1 && x < y) {
+      sum += i;
+      ++av;
     }
-  }
-  if (a >= 7) {
-    initOn--;
-    endOn++;
   }
 }
 
-console.log(op(sum).toFixed(1));
+console.log((sum / (isSum ? 1 : av)).toFixed('1'));
