@@ -10,9 +10,7 @@ void main() async {
     if (input == 'caw caw') {
       ({print(r), r = 0, p++});
     } else {
-      final value = int.parse(input, radix: 2);
-
-      r += value;
+      r += int.parse(input, radix: 2);
     }
   }
 }
