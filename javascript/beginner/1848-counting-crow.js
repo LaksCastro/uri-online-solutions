@@ -7,7 +7,7 @@ let r = 0;
 while (p < 3) {
   const inp = lines.shift().replace(/\*/g, '1').replace(/-/g, '0');
 
-  if (inp == 'caw caw') {
+  if (inp === 'caw caw') {
     console.log(r);
     r = 0;
     p++;
