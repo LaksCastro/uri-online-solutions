@@ -11,8 +11,10 @@ void main() async {
 
     final nextDay = h1 > h2 || (h1 == h2 && m1 > m2);
 
-    final a = DateTime(DateTime.now().year, 1, 1, h1, m1);
-    final b = DateTime(DateTime.now().year, 1, nextDay ? 2 : 1, h2, m2);
+    final year = DateTime.now().year;
+
+    final a = DateTime(year, 1, 1, h1, m1);
+    final b = DateTime(year, 1, nextDay ? 2 : 1, h2, m2);
 
     final diff = b.difference(a);
 
