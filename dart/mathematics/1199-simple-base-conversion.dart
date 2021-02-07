@@ -17,7 +17,3 @@ void main() async {
 
 String _getLine() =>
     stdin.readLineSync(encoding: Encoding.getByName('utf-8'))?.trim() ?? '';
-
-int _getIntLine() => int.tryParse(_getLine());
-
-List<int> _getIntListLine() => _getLine().split(' ').map(int.tryParse).toList();
