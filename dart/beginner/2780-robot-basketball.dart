@@ -12,10 +12,11 @@ void main() {
 
   for (final k in p.keys) {
     if (d > k) {
-      print(p[k]);
-      break;
+      return print(p[k]);
     }
   }
+
+  print(p.values.last);
 }
 
 String _getLine() =>
