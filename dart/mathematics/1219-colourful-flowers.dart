@@ -25,7 +25,7 @@ void main() {
     final sunflowersArea = totalSunFlowersArea - violetsArea - rosesArea;
 
     final result =
-        '${_format(sunflowersArea)} ${_format(violetsArea)} ${_format(rosesArea)}';
+        '''${_format(sunflowersArea)} ${_format(violetsArea)} ${_format(rosesArea)}''';
 
     print(result);
   }

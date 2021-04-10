@@ -24,5 +24,4 @@ String _getLine() {
   return line.trim();
 }
 
-List<int> _getIntListLine() =>
-    _getLine().split(' ').map((o) => int.parse(o)).toList();
+List<int> _getIntListLine() => _getLine().split(' ').map(int.parse).toList();

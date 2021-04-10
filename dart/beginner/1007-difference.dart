@@ -32,7 +32,8 @@ int _getIntLine() => int.parse(_getLine());
 ///   for (var i = 0; i < numbersLength; i++) {
 ///     final out = _getIntLine();
 ///
-///     if (combinations.isEmpty || combinations.last.length == combinationLength) {
+///     if (combinations.isEmpty ||
+///       combinations.last.length == combinationLength) {
 ///       combinations.add([out]);
 ///     } else {
 ///       combinations.last.add(out);
@@ -40,7 +41,8 @@ int _getIntLine() => int.parse(_getLine());
 ///   }
 ///
 ///   final mults = combinations
-///       .map((combination) => combination.reduce((ac, element) => ac * element))
+///       .map((combination) =>
+///         combination.reduce((ac, element) => ac * element))
 ///       .toList();
 ///
 ///   final diff = mults.reduce((ac, element) => ac - element);
