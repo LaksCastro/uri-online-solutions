@@ -1,13 +1,20 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:math' as math;
+
+final _root5 = math.sqrt(5);
 
 void main() async {
   final n = _getIntLine();
 
-  print((3 + (n == 0 ? 0 : _sqrt(n))).toStringAsFixed(10));
+  print(_fastFibonacci(n).toStringAsFixed(1));
 }
 
-double _sqrt(int n, [int i = 0]) => i < n - 1 ? 1 / (6 + _sqrt(n, ++i)) : 1 / 6;
+double _fastFibonacci(int n) =>
+    (_apply(n, sum: true) - _apply(n, sum: false)) / _root5;
+
+double _apply(int n, {bool sum = true}) =>
+    math.pow((1 + (sum ? _root5 : -_root5)) / 2, n);
 
 String _getLine() =>
     stdin.readLineSync(encoding: Encoding.getByName('utf-8'))?.trim() ?? '';
