@@ -8,7 +8,7 @@ void main() {
   for (var i = 0, it = 15, last = false; i < it; i++, last = i == it - 1) {
     final n = _getIntLine();
 
-    final targetList = _isEven(n) ? even : odd;
+    final targetList = n.isEven ? even : odd;
 
     targetList.add(n);
 
@@ -24,10 +24,8 @@ void main() {
   }
 }
 
-bool _isEven(int n) => n % 2 == 0;
-
 void _displayList(List<int> list) {
-  final message = _isEven(list.first) ? 'par' : 'impar';
+  final message = list.first.isEven ? 'par' : 'impar';
 
   for (var i = 0; i < list.length; i++) {
     final item = list[i];

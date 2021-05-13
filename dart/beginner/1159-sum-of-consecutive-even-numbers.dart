@@ -10,9 +10,7 @@ void main() {
 }
 
 int _sum(int n, [int i = 0, int ac = 0]) =>
-    i == 5 ? ac : _sum(n + 2, ++i, (_isEven(n) ? n : n + 1) + ac);
-
-bool _isEven(int n) => n % 2 == 0;
+    i == 5 ? ac : _sum(n + 2, ++i, (n.isEven ? n : n + 1) + ac);
 
 String _getLine() =>
     stdin.readLineSync(encoding: Encoding.getByName('utf-8')).trim();
