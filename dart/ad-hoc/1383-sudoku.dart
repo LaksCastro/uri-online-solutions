@@ -52,12 +52,10 @@ void main() {
     }
 
     if (valid) {
-      print('SIM');
+      print('SIM\n');
     } else {
-      print('NAO');
+      print('NAO\n');
     }
-
-    print('');
   }
 }
 
