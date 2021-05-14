@@ -37,5 +37,3 @@ List<int> _getIntListLine() {
     return line.split(' ').map(int.parse).toList();
   }
 }
-
-int _factorial(n) => n == 0 ? 1 : n * _factorial(n - 1);
