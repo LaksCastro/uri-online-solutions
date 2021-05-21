@@ -7,8 +7,7 @@ void main() {
 
   final handlers = <String, Map<String, int> Function(int, int, int, int)>{
     '+': (n1, d1, n2, d2) {
-      final n = n1 * d2 + n2 * d1;
-      final d = d1 * d2;
+      final n = n1 * d2 + n2 * d1, d = d1 * d2;
 
       return {'n': n, 'd': d};
     },

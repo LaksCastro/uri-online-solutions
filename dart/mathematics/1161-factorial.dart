@@ -14,6 +14,8 @@ void main() {
   }
 }
 
+int _factorial(n) => n == 0 ? 1 : n * _factorial(n - 1);
+
 String _getLine() =>
     stdin.readLineSync(encoding: Encoding.getByName('utf-8'))?.trim() ?? '';
 
@@ -26,5 +28,3 @@ List<int> _getIntListLine() {
     return line.split(' ').map(int.parse).toList();
   }
 }
-
-int _factorial(n) => n == 0 ? 1 : n * _factorial(n - 1);
