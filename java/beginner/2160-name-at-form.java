@@ -6,11 +6,8 @@ public class Main {
   public static void main(String[] args) throws IOException {
     Scanner input = new Scanner(System.in);
 
-    int n1 = input.nextInt();
-    int n2 = input.nextInt();
+    String name = input.nextLine();
 
-    int sum = n1 + n2;
-
-    System.out.println("X = " + sum);
+    System.out.println(name.length() > 80 ? "NO" : "YES");
   }
 }
