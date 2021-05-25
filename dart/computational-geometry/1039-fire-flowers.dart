@@ -7,11 +7,7 @@ class Circle {
   final int x;
   final int y;
 
-  const Circle({
-    this.r,
-    this.x,
-    this.y,
-  });
+  const Circle({this.r, this.x, this.y});
 }
 
 void main() {
@@ -40,7 +36,7 @@ bool _isIn(Circle internal, Circle external) {
   return distance + internal.r <= external.r;
 }
 
-double _getDistance(x1, y1, x2, y2) {
+double _getDistance(int x1, int y1, int x2, int y2) {
   return math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2));
 }
 
