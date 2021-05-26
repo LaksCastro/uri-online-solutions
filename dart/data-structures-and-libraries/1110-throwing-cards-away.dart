@@ -7,8 +7,6 @@ class Stack<T> {
 
   void addEntry(T entry) {
     entries.insert(0, entry);
-
-    if (entries.length >= 2) {}
   }
 
   void sort() {
